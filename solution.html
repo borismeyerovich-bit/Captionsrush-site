@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time visual cues system for hearing-impaired gamers. Translating audio events into accessible visual indicators.">
+    <meta property="og:title" content="Our Solution - CaptionsRush">
+    <meta property="og:description" content="A real-time system that translates important sound events into non-intrusive visual cues.">
+    <meta property="og:type" content="website">
+    <title>Our Solution - CaptionsRush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="glass-effect fixed w-full top-0 z-50 border-b border-blue-500/20">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-blue-400 transition">Home</a>
+                    <a href="/problem.html" class="hover:text-blue-400 transition">Problem</a>
+                    <a href="/solution.html" class="hover:text-blue-400 transition text-blue-400">Solution</a>
+                    <a href="/technology.html" class="hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="hover:text-blue-400 transition">About</a>
+                    <a href="/contact.html" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Talk to Us</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">☰</button>
+            </div>
+            <div class="hidden md:hidden mt-4 space-y-2" id="mobile-menu">
+                <a href="/" class="block py-2 hover:text-blue-400">Home</a>
+                <a href="/problem.html" class="block py-2 hover:text-blue-400">Problem</a>
+                <a href="/solution.html" class="block py-2 text-blue-400">Solution</a>
+                <a href="/technology.html" class="block py-2 hover:text-blue-400">Technology</a>
+                <a href="/about.html" class="block py-2 hover:text-blue-400">About</a>
+                <a href="/contact.html" class="block py-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-center">Talk to Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Our Solution</h1>
+            <p class="text-xl text-gray-300 max-w-3xl">
+                Real-time visual cues that translate audio events into accessible, non-intrusive on-screen indicators.
+            </p>
+        </div>
+    </section>
+
+    <!-- Solution Overview -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12 mb-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">System Overview</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    Our solution is a real-time system that translates important sound events into non-intrusive visual cues. 
+                    The technology detects critical audio events, classifies and prioritizes them, and displays simple on-screen 
+                    indicators that enhance accessibility while maintaining game immersion and competitive balance.
+                </p>
+                <p class="text-lg text-gray-300">
+                    The system is designed to keep immersion intact and avoid competitive imbalance, ensuring that all players 
+                    have equal access to critical gameplay information regardless of their hearing ability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Capability Blocks -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold mb-12 gradient-text text-center">How It Works</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="glass-effect rounded-lg p-8 border-2 border-blue-500/50">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Detection</h3>
+                    <p class="text-gray-300 mb-4">
+                        Our system continuously monitors game audio in real-time, detecting critical sound events as they occur.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Footsteps and movement cues</li>
+                        <li>• Weapon sounds and reloads</li>
+                        <li>• Explosions and alerts</li>
+                        <li>• Voice callouts and announcements</li>
+                    </ul>
+                </div>
+
+                <div class="glass-effect rounded-lg p-8 border-2 border-blue-500/50">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Interpretation</h3>
+                    <p class="text-gray-300 mb-4">
+                        Advanced classification algorithms analyze and prioritize detected events, filtering out noise and identifying what matters most.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Event classification</li>
+                        <li>• Priority ranking</li>
+                        <li>• Contextual understanding</li>
+                        <li>• Noise filtering</li>
+                    </ul>
+                </div>
+
+                <div class="glass-effect rounded-lg p-8 border-2 border-blue-500/50">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Visual Output</h3>
+                    <p class="text-gray-300 mb-4">
+                        Simple, clear visual indicators appear on-screen, providing the same tactical information that audio cues deliver.
+                    </p>
+                    <ul class="text-gray-400 text-sm space-y-2">
+                        <li>• Non-intrusive design</li>
+                        <li>• Directional indicators</li>
+                        <li>• Event type visualization</li>
+                        <li>• Customizable positioning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagram Placeholder -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-8 gradient-text text-center">System Architecture</h2>
+                <div class="bg-gray-900 rounded-lg p-8 min-h-[400px] flex items-center justify-center border-2 border-blue-500/30">
+                    <div class="text-center text-gray-400">
+                        <svg class="w-32 h-32 mx-auto mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                        <p class="text-lg">System Diagram Placeholder</p>
+                        <p class="text-sm mt-2">Conceptual architecture diagram coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold mb-8 gradient-text text-center">Key Benefits</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">Maintains Immersion</h3>
+                    <p class="text-gray-300">
+                        Visual indicators are designed to blend seamlessly with game UI, preserving the gaming experience.
+                    </p>
+                </div>
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">Competitive Balance</h3>
+                    <p class="text-gray-300">
+                        Our solution enhances accessibility without creating unfair advantages, maintaining competitive integrity.
+                    </p>
+                </div>
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">Low Latency</h3>
+                    <p class="text-gray-300">
+                        Real-time processing ensures visual cues appear instantly, matching the timing of audio events.
+                    </p>
+                </div>
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">Easy Integration</h3>
+                    <p class="text-gray-300">
+                        Designed for lightweight engine integration, minimizing impact on game performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA to Contact -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="glass-effect rounded-2xl p-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">Ready to Learn More?</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Interested in bringing this solution to your studio? Let's discuss how we can work together.
+                </p>
+                <a href="/contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition transform hover:scale-105">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-blue-500/20 py-8 px-4 mt-20">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                    <p class="text-sm text-gray-400 mt-2">Making gaming accessible for everyone</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/problem.html" class="text-gray-400 hover:text-blue-400 transition">Problem</a>
+                    <a href="/solution.html" class="text-gray-400 hover:text-blue-400 transition">Solution</a>
+                    <a href="/technology.html" class="text-gray-400 hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="text-gray-400 hover:text-blue-400 transition">About</a>
+                    <a href="/contact.html" class="text-gray-400 hover:text-blue-400 transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 CaptionsRush. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
+

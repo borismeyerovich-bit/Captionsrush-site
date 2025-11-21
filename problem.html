@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understanding the accessibility problem in modern gaming for hearing-impaired players.">
+    <meta property="og:title" content="The Problem - CaptionsRush">
+    <meta property="og:description" content="Modern multiplayer games rely heavily on audio cues that exclude hearing-impaired gamers.">
+    <meta property="og:type" content="website">
+    <title>The Problem - CaptionsRush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="glass-effect fixed w-full top-0 z-50 border-b border-blue-500/20">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-blue-400 transition">Home</a>
+                    <a href="/problem.html" class="hover:text-blue-400 transition text-blue-400">Problem</a>
+                    <a href="/solution.html" class="hover:text-blue-400 transition">Solution</a>
+                    <a href="/technology.html" class="hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="hover:text-blue-400 transition">About</a>
+                    <a href="/contact.html" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Talk to Us</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">☰</button>
+            </div>
+            <div class="hidden md:hidden mt-4 space-y-2" id="mobile-menu">
+                <a href="/" class="block py-2 hover:text-blue-400">Home</a>
+                <a href="/problem.html" class="block py-2 text-blue-400">Problem</a>
+                <a href="/solution.html" class="block py-2 hover:text-blue-400">Solution</a>
+                <a href="/technology.html" class="block py-2 hover:text-blue-400">Technology</a>
+                <a href="/about.html" class="block py-2 hover:text-blue-400">About</a>
+                <a href="/contact.html" class="block py-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-center">Talk to Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">The Problem</h1>
+            <p class="text-xl text-gray-300 max-w-3xl">
+                Competitive gaming's reliance on audio creates an unfair playing field for millions of hearing-impaired players.
+            </p>
+        </div>
+    </section>
+
+    <!-- Detailed Explanation -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12 mb-8">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">Audio Reliance in Modern Gaming</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    Modern multiplayer games rely heavily on directional audio, voice callouts, and subtle sound cues that provide critical gameplay information:
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3 text-xl">•</span>
+                        <div>
+                            <strong class="text-blue-400">Directional Audio:</strong>
+                            <span class="text-gray-300"> Footsteps, gunshots, and movement cues that indicate enemy positions and proximity</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3 text-xl">•</span>
+                        <div>
+                            <strong class="text-blue-400">Voice Callouts:</strong>
+                            <span class="text-gray-300"> Team communication and in-game audio announcements</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3 text-xl">•</span>
+                        <div>
+                            <strong class="text-blue-400">Sound Cues:</strong>
+                            <span class="text-gray-300"> Reloads, explosions, proximity alerts, and other tactical audio information</span>
+                        </div>
+                    </li>
+                </ul>
+                <p class="text-lg text-gray-300">
+                    For millions of hearing-impaired gamers, these cues are completely inaccessible, creating a significant competitive disadvantage.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold mb-8 gradient-text text-center">The Numbers</h2>
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <div class="glass-effect rounded-lg p-8 border border-blue-500/30">
+                    <div class="text-5xl font-bold gradient-text mb-4">50-70M</div>
+                    <p class="text-lg text-gray-300 mb-4">Estimated global hearing-impaired population</p>
+                </div>
+                <div class="glass-effect rounded-lg p-8 border border-blue-500/30">
+                    <div class="text-5xl font-bold gradient-text mb-4">10-15M</div>
+                    <p class="text-lg text-gray-300 mb-4">Weekly gamers within this group</p>
+                </div>
+                <div class="glass-effect rounded-lg p-8 border border-blue-500/30">
+                    <div class="text-5xl font-bold gradient-text mb-4">1-3M</div>
+                    <p class="text-lg text-gray-300 mb-4">Multiplayer/competitive gamers requiring audio cues</p>
+                </div>
+                <div class="glass-effect rounded-lg p-8 border border-blue-500/30">
+                    <div class="text-5xl font-bold gradient-text mb-4">$20-80M</div>
+                    <p class="text-lg text-gray-300 mb-4">Estimated monetizable TAM for accessibility tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-8 gradient-text">Impact on Players</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-400">Slower Reaction Times</h3>
+                        <p class="text-gray-300">
+                            Without audio cues, players miss critical tactical information, leading to slower response times in high-stakes situations.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-400">Poorer Team Communication</h3>
+                        <p class="text-gray-300">
+                            Voice callouts and audio-based team coordination become ineffective, isolating hearing-impaired players from their teams.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-400">Higher Exclusion Rates</h3>
+                        <p class="text-gray-300">
+                            Competitive squads often remove hearing-impaired players, viewing them as a liability in audio-dependent gameplay.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-blue-500 pl-6">
+                        <h3 class="text-xl font-bold mb-3 text-blue-400">Competitive Unfairness</h3>
+                        <p class="text-gray-300">
+                            The playing field becomes fundamentally misaligned when some players have access to information others cannot perceive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Quotes -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold mb-8 gradient-text text-center">What Gamers Are Saying</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <p class="text-gray-300 italic mb-4">
+                        "I can't keep up with my team when they rely on audio callouts. I'm always the last to know what's happening."
+                    </p>
+                    <p class="text-sm text-gray-500">— Gaming Forum User</p>
+                </div>
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <p class="text-gray-300 italic mb-4">
+                        "My competitive squad removed me because I couldn't hear enemy footsteps. It's frustrating being excluded for something I can't control."
+                    </p>
+                    <p class="text-sm text-gray-500">— Reddit Community Member</p>
+                </div>
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <p class="text-gray-300 italic mb-4">
+                        "Discord servers are filled with complaints about this. We need better accessibility options in games."
+                    </p>
+                    <p class="text-sm text-gray-500">— Discord Community Moderator</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Impact -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">A Widely Discussed Problem</h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    This problem is extensively discussed across Reddit, Discord communities, and gaming forums. Gamers consistently report:
+                </p>
+                <ul class="space-y-3 text-gray-300 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>Inability to keep up with teams relying on audio callouts</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>Removal from competitive groups due to communication gaps</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>Limited accessibility support in mainstream gaming titles</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>Frustration with the lack of inclusive design in multiplayer games</span>
+                    </li>
+                </ul>
+                <p class="text-lg text-gray-300">
+                    The gaming community is calling for solutions, and we're answering that call.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA to Solution -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="glass-effect rounded-2xl p-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">Ready for a Solution?</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    See how we're addressing this challenge with real-time visual cues.
+                </p>
+                <a href="/solution.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition transform hover:scale-105">
+                    View Our Solution
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-blue-500/20 py-8 px-4 mt-20">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                    <p class="text-sm text-gray-400 mt-2">Making gaming accessible for everyone</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/problem.html" class="text-gray-400 hover:text-blue-400 transition">Problem</a>
+                    <a href="/solution.html" class="text-gray-400 hover:text-blue-400 transition">Solution</a>
+                    <a href="/technology.html" class="text-gray-400 hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="text-gray-400 hover:text-blue-400 transition">About</a>
+                    <a href="/contact.html" class="text-gray-400 hover:text-blue-400 transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 CaptionsRush. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
+

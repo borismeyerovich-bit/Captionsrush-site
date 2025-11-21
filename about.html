@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Oren Lande and the mission behind CaptionsRush.">
+    <meta property="og:title" content="About - CaptionsRush">
+    <meta property="og:description" content="Oren Lande's mission to make gaming accessible for everyone.">
+    <meta property="og:type" content="website">
+    <title>About - CaptionsRush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="glass-effect fixed w-full top-0 z-50 border-b border-blue-500/20">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-blue-400 transition">Home</a>
+                    <a href="/problem.html" class="hover:text-blue-400 transition">Problem</a>
+                    <a href="/solution.html" class="hover:text-blue-400 transition">Solution</a>
+                    <a href="/technology.html" class="hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="hover:text-blue-400 transition text-blue-400">About</a>
+                    <a href="/contact.html" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Talk to Us</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">☰</button>
+            </div>
+            <div class="hidden md:hidden mt-4 space-y-2" id="mobile-menu">
+                <a href="/" class="block py-2 hover:text-blue-400">Home</a>
+                <a href="/problem.html" class="block py-2 hover:text-blue-400">Problem</a>
+                <a href="/solution.html" class="block py-2 hover:text-blue-400">Solution</a>
+                <a href="/technology.html" class="block py-2 hover:text-blue-400">Technology</a>
+                <a href="/about.html" class="block py-2 text-blue-400">About</a>
+                <a href="/contact.html" class="block py-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-center">Talk to Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">About</h1>
+            <p class="text-xl text-gray-300 max-w-3xl">
+                Building accessible gaming experiences for everyone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Oren Lande Bio -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12 mb-12">
+                <div class="flex flex-col md:flex-row items-start gap-8">
+                    <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-blue-500/50 flex-shrink-0 shadow-lg bg-gray-800">
+                        <img src="Oren.Jpeg" alt="Oren Lande - Founder & CEO" class="w-full h-full object-cover" style="object-position: center 25%; width: 100%; height: 100%;">
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-4xl font-bold mb-4 gradient-text">Oren Lande</h2>
+                        <p class="text-xl text-blue-400 mb-6">Founder & CEO</p>
+                        <div class="prose prose-invert max-w-none">
+                            <p class="text-lg text-gray-300 mb-6">
+                                Oren Lande is the founder of CaptionsRush, dedicated to making competitive gaming 
+                                accessible to players with hearing impairments. With a background in technology and a passion 
+                                for inclusive design, Oren recognized the significant gap in accessibility support within the 
+                                gaming industry.
+                            </p>
+                            <p class="text-lg text-gray-300 mb-6">
+                                Drawing from extensive experience in software development and user experience design, Oren 
+                                has built a solution that bridges the accessibility divide in modern multiplayer gaming. His 
+                                work focuses on creating technology that enhances gameplay for hearing-impaired gamers without 
+                                compromising competitive integrity or game immersion.
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                Through CaptionsRush, Oren aims to set a new standard for accessibility in the gaming 
+                                industry, demonstrating that inclusive design and competitive gameplay can coexist.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Highlights -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl font-bold mb-8 gradient-text text-center">Career Highlights</h2>
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">Technology Leadership</h3>
+                    <p class="text-gray-300">
+                        Extensive experience in software development, system architecture, and innovative technology solutions.
+                    </p>
+                </div>
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">User Experience Design</h3>
+                    <p class="text-gray-300">
+                        Deep understanding of user needs, accessibility requirements, and inclusive design principles.
+                    </p>
+                </div>
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-3 text-blue-400">Gaming Industry</h3>
+                    <p class="text-gray-300">
+                        Passionate gamer and advocate for accessibility, with firsthand understanding of the challenges facing hearing-impaired players.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Statement -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12 border-2 border-blue-500/50">
+                <h2 class="text-3xl font-bold mb-6 gradient-text text-center">Why Accessibility Matters Now</h2>
+                <div class="space-y-6 text-lg text-gray-300">
+                    <p>
+                        The gaming industry has grown exponentially, becoming one of the largest entertainment sectors in the world. 
+                        Yet, accessibility has often been an afterthought, leaving millions of players unable to fully participate 
+                        in competitive gaming experiences.
+                    </p>
+                    <p>
+                        Modern multiplayer games rely heavily on audio cues that exclude hearing-impaired players from competitive 
+                        gameplay. This isn't just a design oversight—it's a fundamental barrier that prevents talented players from 
+                        reaching their potential and enjoying the games they love.
+                    </p>
+                    <p>
+                        We believe that accessibility and competitive excellence are not mutually exclusive. Our mission is to prove 
+                        that with the right technology and design approach, we can create gaming experiences that are both inclusive 
+                        and competitive, setting a new standard for the industry.
+                    </p>
+                    <p class="text-blue-400 font-semibold">
+                        The time for accessible gaming is now. Every player deserves a level playing field.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text text-center">Our Vision</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-400">For Players</h3>
+                        <p class="text-gray-300 mb-4">
+                            A gaming experience where hearing ability doesn't determine competitive potential. Where every player 
+                            has access to the same tactical information, regardless of their hearing status.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-400">For Studios</h3>
+                        <p class="text-gray-300 mb-4">
+                            Partnering with game studios to integrate accessibility from the ground up. Creating tools and solutions 
+                            that enhance player experience while maintaining competitive integrity and game immersion.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-400">For the Industry</h3>
+                        <p class="text-gray-300 mb-4">
+                            Setting a new standard for accessibility in gaming. Demonstrating that inclusive design can be a 
+                            competitive advantage and a source of innovation.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4 text-blue-400">For the Future</h3>
+                        <p class="text-gray-300 mb-4">
+                            Building a gaming ecosystem where accessibility is not an exception, but a fundamental principle of 
+                            game design. Where every new game is designed with inclusivity in mind from day one.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="glass-effect rounded-2xl p-12">
+                <h2 class="text-3xl font-bold mb-6 gradient-text">Join Us on This Mission</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Whether you're a game studio, a player, or an advocate for accessibility, we'd love to connect and discuss 
+                    how we can work together to make gaming more inclusive.
+                </p>
+                <a href="/contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition transform hover:scale-105">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-blue-500/20 py-8 px-4 mt-20">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                    <p class="text-sm text-gray-400 mt-2">Making gaming accessible for everyone</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/problem.html" class="text-gray-400 hover:text-blue-400 transition">Problem</a>
+                    <a href="/solution.html" class="text-gray-400 hover:text-blue-400 transition">Solution</a>
+                    <a href="/technology.html" class="text-gray-400 hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="text-gray-400 hover:text-blue-400 transition">About</a>
+                    <a href="/contact.html" class="text-gray-400 hover:text-blue-400 transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 CaptionsRush. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
+

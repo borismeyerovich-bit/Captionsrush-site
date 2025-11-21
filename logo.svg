@@ -1,0 +1,25 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="speechGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9370DB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Speech bubble with gradient outline -->
+  <path d="M 15 8 Q 8 8 8 15 L 8 28 Q 8 35 15 35 L 28 35 L 33 42 L 33 35 L 40 35 Q 47 35 47 28 L 47 15 Q 47 8 40 8 Z" 
+        fill="none" 
+        stroke="url(#speechGradient)" 
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  
+  <!-- Two horizontal lines inside bubble (white) -->
+  <line x1="18" y1="18" x2="37" y2="18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <line x1="18" y1="25" x2="37" y2="25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- CaptionsRush text -->
+  <text x="55" y="28" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="white">CaptionsRush</text>
+</svg>

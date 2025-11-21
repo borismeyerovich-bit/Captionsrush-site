@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CaptionsRush to discuss studio partnerships and accessibility solutions.">
+    <meta property="og:title" content="Contact - CaptionsRush">
+    <meta property="og:description" content="Want your studio to lead the future of accessible gameplay? Contact us.">
+    <meta property="og:type" content="website">
+    <title>Contact - CaptionsRush</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            min-height: 100vh;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .glass-effect {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(96, 165, 250, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="glass-effect fixed w-full top-0 z-50 border-b border-blue-500/20">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="hover:text-blue-400 transition">Home</a>
+                    <a href="/problem.html" class="hover:text-blue-400 transition">Problem</a>
+                    <a href="/solution.html" class="hover:text-blue-400 transition">Solution</a>
+                    <a href="/technology.html" class="hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="hover:text-blue-400 transition">About</a>
+                    <a href="/contact.html" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition">Talk to Us</a>
+                </div>
+                <button class="md:hidden text-white" id="mobile-menu-btn">☰</button>
+            </div>
+            <div class="hidden md:hidden mt-4 space-y-2" id="mobile-menu">
+                <a href="/" class="block py-2 hover:text-blue-400">Home</a>
+                <a href="/problem.html" class="block py-2 hover:text-blue-400">Problem</a>
+                <a href="/solution.html" class="block py-2 hover:text-blue-400">Solution</a>
+                <a href="/technology.html" class="block py-2 hover:text-blue-400">Technology</a>
+                <a href="/about.html" class="block py-2 hover:text-blue-400">About</a>
+                <a href="/contact.html" class="block py-2 bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg text-center">Talk to Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Get in Touch</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Want your studio to lead the future of accessible gameplay? Contact us to explore partnerships and bring accessibility to your players.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-2xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12">
+                <form action="https://formsubmit.co/your-email@example.com" method="POST" class="space-y-6">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - CaptionsRush">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://your-domain.com/contact-success.html">
+                    
+                    <div>
+                        <label for="name" class="block text-sm font-semibold mb-2 text-gray-300">Name *</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required
+                            class="w-full px-4 py-3 bg-gray-900/50 border border-blue-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition"
+                            placeholder="Your full name"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-semibold mb-2 text-gray-300">Email *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            class="w-full px-4 py-3 bg-gray-900/50 border border-blue-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition"
+                            placeholder="your.email@example.com"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="company" class="block text-sm font-semibold mb-2 text-gray-300">Company</label>
+                        <input 
+                            type="text" 
+                            id="company" 
+                            name="company"
+                            class="w-full px-4 py-3 bg-gray-900/50 border border-blue-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition"
+                            placeholder="Your company or studio name"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-semibold mb-2 text-gray-300">Message *</label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="6"
+                            required
+                            class="w-full px-4 py-3 bg-gray-900/50 border border-blue-500/30 rounded-lg text-gray-100 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/50 transition resize-none"
+                            placeholder="Tell us about your interest in accessibility gaming, potential partnerships, or any questions you have..."
+                        ></textarea>
+                    </div>
+
+                    <button 
+                        type="submit"
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+                    >
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30 text-center">
+                    <svg class="w-12 h-12 text-blue-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2 text-blue-400">Email Us</h3>
+                    <p class="text-gray-300 text-sm">info@accessibilitygaming.com</p>
+                </div>
+                
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30 text-center">
+                    <svg class="w-12 h-12 text-blue-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2 text-blue-400">Studio Partnerships</h3>
+                    <p class="text-gray-300 text-sm">Interested in integrating our solution</p>
+                </div>
+                
+                <div class="glass-effect rounded-lg p-6 border border-blue-500/30 text-center">
+                    <svg class="w-12 h-12 text-blue-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="text-lg font-bold mb-2 text-blue-400">Response Time</h3>
+                    <p class="text-gray-300 text-sm">We typically respond within 24-48 hours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Note -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto max-w-4xl">
+            <div class="glass-effect rounded-2xl p-8 md:p-12 border-2 border-blue-500/50">
+                <h2 class="text-2xl font-bold mb-4 gradient-text text-center">What Happens Next?</h2>
+                <p class="text-gray-300 text-center mb-6">
+                    After you submit your message, we'll review your inquiry and get back to you to discuss:
+                </p>
+                <ul class="space-y-3 text-gray-300 max-w-2xl mx-auto">
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>Partnership opportunities and integration possibilities</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>Technical requirements and implementation details</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>Accessibility solutions tailored to your studio's needs</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-400 mr-3">•</span>
+                        <span>How we can work together to make gaming more inclusive</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-blue-500/20 py-8 px-4 mt-20">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="/" class="flex items-center space-x-2">
+                    <img src="logo.svg" alt="CaptionsRush" class="h-14 w-auto">
+                </a>
+                    <p class="text-sm text-gray-400 mt-2">Making gaming accessible for everyone</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="/problem.html" class="text-gray-400 hover:text-blue-400 transition">Problem</a>
+                    <a href="/solution.html" class="text-gray-400 hover:text-blue-400 transition">Solution</a>
+                    <a href="/technology.html" class="text-gray-400 hover:text-blue-400 transition">Technology</a>
+                    <a href="/about.html" class="text-gray-400 hover:text-blue-400 transition">About</a>
+                    <a href="/contact.html" class="text-gray-400 hover:text-blue-400 transition">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-sm text-gray-500">
+                <p>&copy; 2024 CaptionsRush. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Form submission feedback
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                const submitButton = form.querySelector('button[type="submit"]');
+                if (submitButton) {
+                    submitButton.textContent = 'Sending...';
+                    submitButton.disabled = true;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
